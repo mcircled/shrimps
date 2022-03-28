@@ -1,4 +1,9 @@
---- layout: default disqus: false archive: false post_class: post-template ---
+--- 
+layout: default 
+disqus: false 
+archive: false 
+post_class: post-template 
+---
 
 <!-- Begin Article
 ================================================== -->
@@ -21,7 +26,7 @@
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}"> {% else %}
+                        <img class="author-thumb" src="/{{ author.avatar }}" alt="{{ author.display_name }}"> {% else %}
                         <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}"> {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
@@ -43,8 +48,8 @@
             <!-- Post Featured Image -->
             {% if page.image %} {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains " ://
-                " %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}"> {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains " :// " %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}"> {% endif %} {% endif %}
+                " %}{{ page.image }}{% else %}{{ page.image }}{% endif %}" alt="{{ page.title }}"> {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains " :// " %}{{ page.image }}{% else %}/{{ page.image }}{% endif %}" alt="{{ page.title }}"> {% endif %} {% endif %}
             <!-- End Featured Image -->
 
             <!-- Post Content -->
@@ -84,7 +89,7 @@
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %} {% for category in sortedCategories %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","- " }}">{{ category }}</a>
+                        <a class="smoothscroll" href="/categories#{{ category | replace: " ","- " }}">{{ category }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -96,7 +101,7 @@
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %} {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","- " }}">#{{ tag }}</a>
+                        <a class="smoothscroll" href="/tags#{{ tag | replace: " ","- " }}">#{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>
