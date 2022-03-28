@@ -9,9 +9,7 @@ categories:
   ]
 tags:
   [
-    doing what you do,
-    unconcious mind,
-    a better day, 
+    time,management,productivity, 
   ]
 image: assets/images/2022/03/better-day.jpg
 description: "my try to help you to get some fuel, and some guidance to enjoy 1% better day"
@@ -44,4 +42,3 @@ In simple words, do what you are doing, the focus should be totally on it, doesn
 Time does not matter here, what matters is obedience, consistency and motivation. Consistency with the time, obedience to the rules, and motivation to calm for the results.
 
 ``Be mindful, do what you are doing.``
-
