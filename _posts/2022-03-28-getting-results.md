@@ -18,10 +18,9 @@ hidden: false
 rating: 5
 ---
 
-In the [previous article][#prev_article], I was writing an article about get a 1% better day and spent the time which it needs to get complete and get productive, but there is still one missing thing which can bring the real productivity out of the time and effort you spent.
+In the [previous article](/a-1-better-day "previous article"), I was writing an article about get a 1% better day and spent the time which it needs to get complete and get productive, but there is still one missing thing which can bring the real productivity out of the time and effort you spent.
 
 and the missing thing is getting results.
-
 ## Getting results
 
 The one missing thing as I mentioned is getting results, so what kind of results for someone it can be subscriptions, likes, money and acknoledement, and for some other person it can be improvement in analytical thinking, knowledge and mental growth, so it differs from person x to person y.
