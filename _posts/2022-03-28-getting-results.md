@@ -13,7 +13,7 @@ tags:
   ]
 image: assets/images/2022/03/getting-results.jpg
 description: "2nd blog post on my try to help you to get some fuel, and some guidance to enjoy 1% better day"
-featured: false
+featured: true
 hidden: false
 rating: 5
 ---
