@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const ThemeContext = createContext()
 
 const ThemeProvider = ({ children }) => {
-  const [themeName, setThemeName] = useState('light')
+  const [themeName, setThemeName] = useState()
 
   useEffect(() => {
     const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -21,7 +21,7 @@ const ThemeProvider = ({ children }) => {
   }
 
   return (
-    <ThemeContext.Provider value={[{ themeName, toggleTheme }]}>
+    <ThemeContext.Provider value={[{ themeName: themeName ?? 'dark', toggleTheme }]}>
       {children}
     </ThemeContext.Provider>
   )
