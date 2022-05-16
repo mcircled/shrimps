@@ -1,23 +1,68 @@
-# Mediumish - Jekyll Theme
+# Cleanfolio
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/) &nbsp; | &nbsp; [Buy me a coffee](https://www.wowthemes.net/donate/)
+A clean and simple portfolio template built using React, if want a template built with HTML, CSS and JS then check out [Cleanfolio Minimal](https://github.com/rajshekhar26/cleanfolio-minimal).
 
-![mediumish](assets/images/mediumish-jekyll-template.png)
+## Preview
 
+[![Imgur](https://imgur.com/FwDMNEM.gif)](https://rajshekhar26.github.io/cleanfolio)
 
-### Copyright
+[See Live](https://rajshekhar26.github.io/cleanfolio)
 
-Copyright (C) 2019 Sal, https://www.wowthemes.net
+## Instructions
 
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
+### Setup
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+```shell
+git clone https://github.com/rajshekhar26/cleanfolio
+cd cleanfolio
+```
 
-### Contribute
+If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) (optional) -
 
-1. [Fork the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
-2. Clone a copy of your fork on your local
-3. Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
-4. Make necessary changes, commit, push and open a pull request on GitHub.
+```shell
+nvm install
+nvm use
+```
 
-Thank you!
+Or -
+
+```shell
+fnm install
+fnm use
+```
+
+Install and run -
+
+```shell
+yarn
+yarn start
+```
+
+### How to use
+
+- Open `public/index.html` and replace -
+
+`<title>John Smith</title>` with `<title>Your Name</title>`.
+
+- Open `src/portfolio.js` and make changes.
+
+### Deployment
+
+- Go to `package.json` file and replace -
+
+`"homepage": "https://rajshekhar26.github.io/cleanfolio"`
+
+with `"homepage": "https://yourusername.github.io"`.
+
+- Push the changes.
+
+- Build and deploy -
+
+```shell
+yarn build
+yarn deploy
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
