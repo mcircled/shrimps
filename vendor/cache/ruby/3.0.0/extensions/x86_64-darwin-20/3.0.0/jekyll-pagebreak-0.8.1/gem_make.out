@@ -1,0 +1,8 @@
+current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/site/vendor/cache/ruby/3.0.0/gems/jekyll-pagebreak-0.8.1/ext
+/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220525-13968-g9ny26.rb extconf.rb
+extconf.rb:39:in `initialize': No such file or directory @ rb_sysopen - https://github.com/CloudCannon/pagebreak/releases/download/v0.8.1/pagebreak-v0.8.1-x86_64-apple-darwin.tar.gz (Errno::ENOENT)
+	from extconf.rb:39:in `open'
+	from extconf.rb:39:in `<main>'
+Installing Pagebreak
+
+extconf failed, exit code 1
