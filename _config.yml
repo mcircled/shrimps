@@ -1,5 +1,5 @@
-title: Shrimps
-baseurl: "shrimps.dev"
+title: Vonge
+
 plugins:
   - jekyll-bookshop
   - jekyll-sitemap
@@ -9,7 +9,7 @@ plugins:
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
-  - ../components
+  - ./components
 
 exclude:
   - postcss.config.js
@@ -56,5 +56,3 @@ defaults:
 tag_page_dir: tag
 tag_page_layout: tag_page
 tag_permalink_style: /:title
-
-theme: jekyll-theme-architect
