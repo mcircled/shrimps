@@ -1,16 +1,16 @@
-current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/site/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220525-12472-uk7j40.rb extconf.rb --with-cppflags\=-I/usr/local/opt/openssl/include
+current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220525-17152-dz6fo7.rb extconf.rb --with-cppflags\=-I/usr/local/opt/openssl/include
 creating Makefile
 
-current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/site/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" clean
 
-current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/site/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR="
 compiling mapper.cpp
 compiling rubymain.cpp
 linking shared-object fastfilereaderext.bundle
 
-current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/site/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Volumes/Data/DEVELOPMENT/BLOG/shrimpsdev/shrimps/vendor/cache/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20220525-12472-y30dxh
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20220525-17152-ft9hig

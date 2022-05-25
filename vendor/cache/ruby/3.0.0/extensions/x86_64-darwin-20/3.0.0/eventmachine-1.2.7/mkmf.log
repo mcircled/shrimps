@@ -141,7 +141,7 @@ checked program was:
 "gcc -fdeclspec -o conftest -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/x86_64-darwin20 -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/ruby/backward -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0 -I. -I/usr/local/opt/openssl/include -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lcrypto -lssl -lruby.3.0  -lcrypto -lssl  "
 Undefined symbols for architecture x86_64:
   "_rb_thread_blocking_region", referenced from:
-      _t in conftest-53a57c.o
+      _t in conftest-e3b990.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -304,7 +304,7 @@ checked program was:
 "gcc -fdeclspec -o conftest -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/x86_64-darwin20 -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/ruby/backward -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0 -I. -I/usr/local/opt/openssl/include -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lcrypto -lssl -lruby.3.0  -lcrypto -lssl  "
 Undefined symbols for architecture x86_64:
   "_rb_enable_interrupt", referenced from:
-      _t in conftest-93bfab.o
+      _t in conftest-ae4093.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -485,7 +485,7 @@ checked program was:
 "gcc -fdeclspec -o conftest -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/x86_64-darwin20 -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/ruby/backward -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0 -I. -I/usr/local/opt/openssl/include -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lcrypto -lssl -lruby.3.0  -lcrypto -lssl  "
 Undefined symbols for architecture x86_64:
   "_pipe2", referenced from:
-      _t in conftest-3ca69b.o
+      _t in conftest-854b3f.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -541,7 +541,7 @@ checked program was:
 "gcc -fdeclspec -o conftest -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/x86_64-darwin20 -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/ruby/backward -I/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0 -I. -I/usr/local/opt/openssl/include -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L/Users/rashidiqbal/.rvm/rubies/ruby-3.0.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lcrypto -lssl -lruby.3.0  -lcrypto -lssl  "
 Undefined symbols for architecture x86_64:
   "_accept4", referenced from:
-      _t in conftest-432673.o
+      _t in conftest-b7d697.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
