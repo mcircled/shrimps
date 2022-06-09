@@ -22,7 +22,6 @@ pre {
   margin-bottom: 30px;
 }
 
-
 /**
  * Consistent indentation for lists.
  */
@@ -41,6 +40,6 @@ ol {
 }
 
 .lightense-backdrop {
-  background-color: $primary-color  !important;
+  background-color: var(--primary-color) !important;
   opacity: 0.5;
 }

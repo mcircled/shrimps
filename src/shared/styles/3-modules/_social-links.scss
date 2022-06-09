@@ -11,38 +11,47 @@
 
   .social__item {
     display: inline-block;
-    margin: 0 2px;
+    margin: 4px;
   }
 
   .social__link {
-    position: relative;
-    z-index: 1;
-    padding: 0 10px;
-    font-size: 21px;
-    line-height: 1;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 50%;
+    color: var(--font-color);
+    background: var(--bg-color-alt);
+    transition: all 0.25s;
+    will-change: transform;
 
     &:hover {
-      color: $white;
+      color: var(--font-color);
 
       &::after {
-        transform: translate3d(-50%,-50%,0) scale(0.9);
+        transform: translate3d(-50%, -50%, 0) scale(0.9);
       }
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       z-index: -1;
       top: 50%;
       left: 50%;
-      transform: translate3d(-50%,-50%,0) scale(0);
+      transform: translate3d(-50%, -50%, 0) scale(0);
       width: 100%;
       height: 0;
       padding-bottom: 100%;
       border-radius: 50%;
-      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
-      transition: all .25s;
+      background: linear-gradient(
+        90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 167%
+      );
+      transition: all 0.25s;
     }
   }
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {};
 
 function RelatedPost({}: Props) {
@@ -12,7 +10,7 @@ function RelatedPost({}: Props) {
             <a className="section__link" href="/blog">
               {" "}
             </a>
-            <a href="/tags#travel" className="section__link related-tag">
+            <a href="/tags#travel" className="section__link">
               See all<span> travel</span>{" "}
               <i className="ion ion-md-arrow-forward"></i>
             </a>
@@ -35,12 +33,12 @@ function RelatedPost({}: Props) {
               </div>
 
               <div className="article__content">
-                <div className="article-tags__box">
-                  <a href="/tag/travel" className="article__tag">
+                <div className="tags">
+                  <a href="/tag/travel" className="tag">
                     travel
                   </a>
 
-                  <a href="/tag/lifestyle" className="article__tag">
+                  <a href="/tag/lifestyle" className="tag">
                     lifestyle
                   </a>
                 </div>
@@ -93,16 +91,16 @@ function RelatedPost({}: Props) {
               </div>
 
               <div className="article__content">
-                <div className="article-tags__box">
-                  <a href="/tag/notes" className="article__tag">
+                <div className="tags">
+                  <a href="/tag/notes" className="tag">
                     notes
                   </a>
 
-                  <a href="/tag/story" className="article__tag">
+                  <a href="/tag/story" className="tag">
                     story
                   </a>
 
-                  <a href="/tag/rest" className="article__tag">
+                  <a href="/tag/rest" className="tag">
                     rest
                   </a>
                 </div>
@@ -156,12 +154,12 @@ function RelatedPost({}: Props) {
               </div>
 
               <div className="article__content">
-                <div className="article-tags__box">
-                  <a href="/tag/travel" className="article__tag">
+                <div className="tags">
+                  <a href="/tag/travel" className="tag">
                     travel
                   </a>
 
-                  <a href="/tag/rest" className="article__tag">
+                  <a href="/tag/rest" className="tag">
                     rest
                   </a>
                 </div>

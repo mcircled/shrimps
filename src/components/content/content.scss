@@ -4,11 +4,11 @@
 
   a {
     font-weight: 500;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--bg-color-alt);
 
     &:hover {
-      color: $link-color;
-      border-bottom-color: $link-color-hover;
+      color: var(--font-color);
+      border-bottom-color: var(--font-color);
     }
   }
 }

@@ -1,7 +1,6 @@
 /* Header */
 .c-header {
   height: auto;
-  transition: $global-transition;
 }
 
 .c-header__inner {
@@ -12,12 +11,9 @@
   padding: 48px $base-spacing-unit 40px;
   min-height: 80px;
 
-
-
   @media only screen and (max-width: $mobile) {
     padding: 30px $base-spacing-unit;
   }
-
 }
 
 .logo {
@@ -34,13 +30,12 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $text-color;
+    color: var(--font-color);
   }
 
   @media only screen and (max-width: $mobile) {
     font-size: 32px;
   }
-
 }
 
 .logo__image {
@@ -53,9 +48,6 @@
   align-items: center;
   width: 100%;
   margin-left: 100px;
-
-  background: $background-color;
-
   .social {
     margin-left: auto;
 
@@ -64,7 +56,6 @@
       vertical-align: middle;
     }
   }
-
 
   @media only screen and (max-width: $desktop) {
     position: fixed;
@@ -77,12 +68,12 @@
     margin: 0;
     opacity: 0;
     overflow: auto;
-    transition: all .25s ease;
+    transition: all 0.25s ease;
 
     &.is-open {
       z-index: 999;
       opacity: 1;
-      transition: all .25s ease;
+      transition: all 0.25s ease;
     }
 
     .nav__list {
@@ -106,7 +97,6 @@
           visibility: visible;
           transform: scale(1);
           box-shadow: none;
-
 
           .nav__link {
             margin-left: 8px;
@@ -140,7 +130,7 @@
 
           &.active-link,
           &.cc-active {
-            color: $white;
+            color: var(--font-color);
 
             &::after {
               content: none;
@@ -176,7 +166,7 @@
     font-size: 18px;
     border-radius: 50%;
     cursor: pointer;
-    background: $background-color-alt;
+    background: var(--bg-color-alt);
 
     &:hover {
       .ion-md-close {
@@ -185,8 +175,8 @@
     }
 
     .ion-md-close {
-      color: $white;
-      transition: $global-transition;
+      color: var(--font-color);
+
       will-change: transform;
     }
   }
@@ -210,8 +200,8 @@
       font-size: 32px;
       line-height: 1;
       font-weight: 900;
-      color: $heading-font-color;
-      border-bottom: 1px solid $border-color;
+      color: var(--heading-color);
+      border-bottom: 1px solid var(--bg-color-alt);
     }
   }
 
@@ -223,7 +213,6 @@
 }
 
 .nav__list {
-
   .nav__item {
     display: inline-block;
     margin: 0 24px;
@@ -241,11 +230,10 @@
       cursor: pointer;
 
       &:hover {
-        color: $text-color;
+        color: var(--font-color);
       }
 
       &.active-link {
-
         &::after {
           content: "";
           position: absolute;
@@ -256,7 +244,7 @@
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          background-color: $primary-color;
+          background-color: var(--primary-color);
         }
       }
     }
@@ -290,15 +278,14 @@
     padding: 20px;
     opacity: 0;
     visibility: hidden;
-    transition: all .25s ease;
+    transition: all 0.25s ease;
     border-radius: 8px;
-    background-color: $background-color, 0.07;
-    border: 2px solid $background-color-alt;
-    box-shadow: 0px 20px 20px $background-color-alt, 0.07;
-
+    background-color: var(--bg-color), 0.07;
+    border: 2px solid var(--bg-color-alt);
+    box-shadow: 0px 20px 20px var(--bg-color-alt), 0.07;
 
     @media only screen and (max-width: $desktop) {
-      background-color: $background-color-alt;
+      background-color: var(--bg-color-alt);
     }
 
     @media only screen and (max-width: $mobile) {
@@ -306,8 +293,6 @@
       border: unset;
       border-radius: unset;
     }
-
-
 
     .nav__link {
       display: flex;
@@ -317,12 +302,12 @@
       will-change: transform;
 
       &:hover {
-        background-color: rgba($primary-color, 0.1);
+        background-color: rgba(var(--primary-color), 0.1);
       }
 
       &.active-link,
       &.cc-active {
-        color: $white;
+        color: var(--font-color);
 
         &::after {
           content: none;
@@ -336,7 +321,7 @@
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: $text-color;
+  color: var(--font-color);
   cursor: pointer;
 
   .nav__icon-menu {

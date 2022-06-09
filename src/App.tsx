@@ -6,7 +6,7 @@ import Post from "./pages/Post";
 import About from "./pages/About";
 function App() {
   return (
-    <div className="App">
+    <div id="App" className="App" data-theme="dark">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />

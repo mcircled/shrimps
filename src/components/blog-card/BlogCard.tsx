@@ -1,68 +1,47 @@
 import { Link } from "react-router-dom";
 
-type Props = {
-  title: string;
-  date: string;
-  description: string | JSX.Element;
-  image: {
-    src: string;
-    alt: string;
-  };
-  url: string;
-  author: {
-    name: string;
-    image: string;
-  };
-  tags: string[];
-};
+type Props = {};
 
-function BlogCard({
-  title,
-  date,
-  description,
-  image,
-  url,
-  author,
-  tags,
-}: Props) {
-  return (
+function BlogCard(post: Post): JSX.Element {
+  const { title, slug, image, excerpt, author, tags, createdAt } = post;
+  return post !== undefined ? (
     <div className="c-blog-card col col-4 col-d-6 col-t-12">
       <div className="c-blog-card__inner">
         <div className="c-blog-card__image-wrap">
-          <Link className="c-blog-card__image" to={url}>
-            <img loading="lazy" src={image.src} alt={image.alt} />
-          </Link>
+          <img loading="lazy" src={image.src} alt={image.alt} />
         </div>
 
         <div className="c-blog-card__content">
-          <div className="c-blog-card__tags-box">
-            {tags.map((tag) => (
-              <a href={`/tag/${tag}`} className="c-blog-card__tag">
-                {tag}
-              </a>
+          <div className="tags">
+            {tags.map(({ id, name, slug }) => (
+              <Link key={id} to={`/tag/${slug}`} className="tag">
+                {name}
+              </Link>
             ))}
           </div>
 
           <h2 className="c-blog-card__title">
-            <Link to={url}>{title}</Link>
+            <Link to={`/post/${slug}`}>{title}</Link>
           </h2>
 
-          <p className="c-blog-card__excerpt">{description}</p>
+          <p className="c-blog-card__excerpt">{excerpt}</p>
 
           <div className="c-blog-card__meta">
             <div className="c-blog-card__author-image">
-              <img loading="lazy" src={author.image} alt={author.name} />
+              <img loading="lazy" src={author.avatar} alt={author.name} />
             </div>
             <div className="c-blog-card__info">
               <div className="c-blog-card__author-name">{author.name}</div>
               <span className="c-blog-card__date">
-                <time dateTime={date}>{date}</time>
+                <time dateTime={createdAt}>{createdAt}</time>
               </span>
             </div>
           </div>
         </div>
       </div>
     </div>
+  ) : (
+    <></>
   );
 }
 

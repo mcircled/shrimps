@@ -112,10 +112,6 @@ function Header({}: Props) {
                 </ul>
               </div>
             </nav>
-
-            <div className="nav-button">
-              <i className="nav__icon nav__icon-menu ion ion-md-menu"></i>
-            </div>
           </div>
         </div>
       </div>
