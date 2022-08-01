@@ -9,7 +9,7 @@ type Props = {
     text: string;
     url: string;
   };
-  work_button: {
+  work_button?: {
     text: string;
     url: string;
   };
@@ -29,18 +29,22 @@ function Hero({ title, description, cta_button, work_button, image }: Props) {
                   <a
                     href={cta_button.url}
                     className="cta-button c-button c-button--primary c-button--small"
+                    target={"_blank"}
                   >
                     {cta_button.text}
                   </a>
-                  <a
-                    className="works-button c-button c-button--secondary c-button--small"
-                    href={work_button.url}
-                  >
-                    <span className="circle-bg">
-                      <i className="ion ion-md-arrow-down button-arrow"></i>
-                    </span>{" "}
-                    {work_button.text}
-                  </a>
+                  {
+                    work_button && (
+                      <a
+                        className="works-button c-button c-button--secondary c-button--small"
+                        href={work_button.url}
+                      >
+                        <span className="circle-bg">
+                          <i className="ion ion-md-arrow-down button-arrow"></i>
+                        </span>{" "}
+                        {work_button.text}
+                      </a>)
+                  }
                 </div>
               </div>
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 type Props = {};
 
-function Header({}: Props) {
+function Header({ }: Props) {
   return (
     <header className="c-header">
       <div className="container">
@@ -29,7 +29,7 @@ function Header({}: Props) {
                     </Link>
                   </li>
 
-                  <li className="nav__item">
+                  {/* <li className="nav__item">
                     <Link to={"/projects"} className="nav__link">
                       Projects
                     </Link>
@@ -39,7 +39,7 @@ function Header({}: Props) {
                     <Link to={"/blog"} className="nav__link">
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li className="nav__item">
                     <Link to={"/about"} className="nav__link">
@@ -60,7 +60,7 @@ function Header({}: Props) {
                 </ul>
               </div>
 
-              <div className="social">
+              {/* <div className="social">
                 <ul className="social__list list-reset">
                   <li className="social__item">
                     <a
@@ -110,7 +110,7 @@ function Header({}: Props) {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </nav>
           </div>
         </div>

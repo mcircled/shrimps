@@ -1,4 +1,3 @@
-import Footer from "components/footer/Footer";
 import Header from "components/header/header";
 import React from "react";
 
@@ -37,7 +36,7 @@ function DefaultLayout({ children }: Props) {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
